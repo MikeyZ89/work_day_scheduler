@@ -24,8 +24,8 @@ $("#15a").val(localStorage.getItem("15a"));
 $("#16a").val(localStorage.getItem("16a"));
 $("#17a").val(localStorage.getItem("17a"));
 
-$('button').on('click', function (){
-    let time = $(this).parent().attr('id');
+$(".saveBtn").on('click', function (){
+    let time = $(this).siblings('textarea').attr('id');
     let text = $(this).siblings('textarea').val();
     localStorage.setItem(time, text);
 });
