@@ -30,9 +30,4 @@ $(".saveBtn").on('click', function (){
     localStorage.setItem(time, text);
 });
 
-// //Save function, detects a click anywhere in the container, then checks if the click is on an element with class saveBtn, before getting the specific row from an assigned ID on the button.
-// $(".container").on("click", function(e){
-//     if(e.target.classList.contains("saveBtn")){ 
-//         planner[e.target.id] = $(e.target).prev()[0].value; //This seems needlessly complex.
-//         localStorage.setItem("planner", JSON.stringify(planner));
-//     }
+
